@@ -1,0 +1,45 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.cont
+{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mb-3
+{
+    width: 80%;
+    height: 40%;
+}
+.btn
+{
+    border: none;
+outline: none;
+}
+
+.btn.btn-primary
+{
+margin-left: 10px;
+outline: none;
+} 
+
+.dark {
+    margin-left: 1000px;
+    margin-top: 20px;
+   
+
+}
+
+.dark button
+{
+    color: green;
+    justify-content: start;
+}
