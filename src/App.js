@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
 import "./Textform.css";
-import About from "./components/About";
+// import About from "./components/About";
 // import Home from './components/Home';
 // import Contact from './components/Contact';
 // import Error from "./components/Error"
@@ -13,7 +13,7 @@ import Textform from "./components/Textform";
 import React, { useState } from "react";
 import Alert from "./components/Alert";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [mode, setmode] = useState("light");
@@ -47,22 +47,17 @@ function App() {
   };
   return (
     <>
-    <BrowserRouter>
+    
     
       <Navbar mode={mode} toggleMode={toggleMode} about = "About" />
       <Alert alert={alert} />
-      <Routes>
-      <Route
-       path="/" element = { <Textform
+  <Textform
         showAlert={showAlert}
         heading="Enter Text to Analyzar below"
         mode={mode}
-      />}/>
+      />
      
-     <Route path="about" element = {<About />}/> 
-      </Routes>
-      </BrowserRouter>
-
+     {/* <About /> */}
       {/* <Home /> */}
 
       {/* <Changetime />
